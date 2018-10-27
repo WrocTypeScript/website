@@ -11,7 +11,7 @@ body {
 
   font-family: 'Mukta Vaani', sans-serif;
   font-weight: 200;
-  font-size: 38px;
+  font-size: 2vmax;
 
   @media (min-device-width: 800px) {
     font-size: 18px;
@@ -20,7 +20,7 @@ body {
 
 h1 {
   font-weight: inherit;
-  font-size: 10vw;
+  font-size: 10vmin;
 
   @media (min-width: 1000px) {
     font-size: 71px;
@@ -81,7 +81,7 @@ h1 {
 
   border-radius: 10px;
 
-  @media (min-device-width: 800px) {
+  @media (orientation: landscape), (min-device-width: 800px) {
     border-radius: 5px;
   }
 
