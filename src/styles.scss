@@ -1,0 +1,96 @@
+$blue: #0062ff;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Mukta Vaani", sans-serif;
+  font-weight: 200;
+  font-size: 38px;
+
+  @media (min-device-width: 800px) {
+    font-size: 18px;
+  }
+}
+
+h1 {
+  font-weight: inherit;
+  font-size: 10vw;
+
+  @media (min-width: 1000px) {
+    font-size: 71px;
+  }
+}
+
+.heading--centered {
+  text-align: center;
+}
+
+.page {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--center {
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  background: transparent;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:hover {
+    //todo
+  }
+
+  &:focus {
+    // todo
+    outline: none;
+    transform: scale(0.99);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  border: none;
+
+  border-radius: 10px;
+
+  @media (min-device-width: 800px) {
+    border-radius: 5px;
+  }
+
+  padding: 0.4em 1.4em;
+}
+
+.button--shadow {
+}
+
+.button--blue {
+  background: $blue;
+  color: white;
+}

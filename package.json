@@ -1,0 +1,16 @@
+{
+  "name": "typescript-wro",
+  "version": "1.0.0",
+  "main": "src/index.html",
+  "author": "blackdahila <ola.zxcvbnm@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html -d build"
+  },
+  "devDependencies": {
+    "parcel": "^1.10.3",
+    "sass": "^1.14.3"
+  }
+}
