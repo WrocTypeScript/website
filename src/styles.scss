@@ -1,4 +1,5 @@
 $blue: #0062ff;
+$yellow: orange;
 
 html,
 body {
@@ -8,9 +9,9 @@ body {
 body {
   margin: 0;
 
-  font-family: "Mukta Vaani", sans-serif;
+  font-family: 'Mukta Vaani', sans-serif;
   font-weight: 200;
-  font-size: 38px;
+  font-size: 2vmax;
 
   @media (min-device-width: 800px) {
     font-size: 18px;
@@ -19,7 +20,7 @@ body {
 
 h1 {
   font-weight: inherit;
-  font-size: 10vw;
+  font-size: 10vmin;
 
   @media (min-width: 1000px) {
     font-size: 71px;
@@ -80,11 +81,27 @@ h1 {
 
   border-radius: 10px;
 
-  @media (min-device-width: 800px) {
+  @media (orientation: landscape), (min-device-width: 800px) {
     border-radius: 5px;
   }
 
   padding: 0.4em 1.4em;
+}
+
+@mixin textUnderline($underlineColor) {
+  border-bottom: 3px dashed $underlineColor;
+  display: inline-block;
+  line-height: 0.85;
+}
+
+// can be used to cover text underline around descenders
+@mixin textShadow($size: 2px, $color: white) {
+  text-shadow: $size $size $color, $size -$size $color, -$size $size $color,
+    -$size -$size $color;
+}
+
+.text--underline {
+  @include textUnderline($yellow);
 }
 
 .button--shadow {
