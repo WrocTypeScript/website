@@ -191,23 +191,51 @@ h1 {
 }
 
 .sponsors {
+  padding: 5vmin;
   background: $gray;
   span {
+    display: block;
     color: rgba(255, 255, 255, 0.25);
+    margin-bottom: 1.6em;
+    font-weight: 200;
   }
   margin-top: -1px; // I'm sorry. That's workaround for visual glitch on phone screens.
 }
 
 .sponsors__logos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+
+  @media (min-device-width: 800px) {
+    height: 260px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
 }
 
-.sponsors__centra-logo {
-}
+.sponsors__logo {
+  opacity: 0.25;
+  transition: opacity 250ms ease;
+  height: 120px;
 
-.sponsors__ingrid-logo {
-}
+  @media (min-device-width: 800px) {
+    height: 60px;
+  }
 
-.sponsors__young-skiled-logo {
+  &:hover {
+    opacity: 1;
+  }
+
+  &.sponsors__logo--young-skilled {
+    height: 200px;
+    margin: 60px 0;
+
+    @media (min-device-width: 800px) {
+      height: 100px;
+      margin: 0;
+    }
+  }
 }
