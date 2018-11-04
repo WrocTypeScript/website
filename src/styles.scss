@@ -29,13 +29,14 @@ h1 {
   font-weight: inherit;
   font-size: 10vmin;
   font-weight: 200;
+  line-height: 1.4;
 
   @media (min-width: 1000px) {
     font-size: 71px;
   }
 }
 
-.heading--centered {
+.text--centered {
   text-align: center;
 }
 
@@ -51,6 +52,7 @@ h1 {
 
 .speaker-page {
   height: 80%;
+  padding: 1em;
 
   background-color: #141414;
   color: white;
@@ -186,4 +188,26 @@ h1 {
   display: flex;
   justify-content: flex-end;
   padding: 0 10px;
+}
+
+.sponsors {
+  background: $gray;
+  span {
+    color: rgba(255, 255, 255, 0.25);
+  }
+  margin-top: -1px; // I'm sorry. That's workaround for visual glitch on phone screens.
+}
+
+.sponsors__logos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sponsors__centra-logo {
+}
+
+.sponsors__ingrid-logo {
+}
+
+.sponsors__young-skiled-logo {
 }
