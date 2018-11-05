@@ -1,5 +1,6 @@
 $blue: #0062ff;
 $yellow: orange;
+$gray: #141414;
 
 $headerHeight: 65px;
 
@@ -16,7 +17,7 @@ body {
   margin: 0;
 
   font-family: 'Mukta Vaani', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 2vmax;
 
   @media (min-device-width: 800px) {
@@ -27,22 +28,45 @@ body {
 h1 {
   font-weight: inherit;
   font-size: 10vmin;
+  font-weight: 200;
+  line-height: 1.4;
 
   @media (min-width: 1000px) {
     font-size: 71px;
   }
 }
 
-.heading--centered {
+.text--centered {
   text-align: center;
 }
 
 .main-page {
   position: relative;
-  height: calc(100% - #{$headerHeight});
+  // height: calc(100% - #{$headerHeight});
+  height: 100%;
 
   h1 {
     margin-top: 1.34em;
+  }
+}
+
+.speaker-page {
+  height: 80%;
+  padding: 1em;
+
+  background-color: #141414;
+  color: white;
+
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 1.6em;
+  }
+
+  .text--underline {
+    border-color: rgba(255, 255, 255, 0.25);
   }
 }
 
@@ -128,6 +152,12 @@ h1 {
   color: white;
 }
 
+.button--gray {
+  background: $gray;
+  border: 2px solid white;
+  color: white;
+}
+
 .button--transparent {
   font-weight: normal;
   color: #111;
@@ -153,11 +183,59 @@ h1 {
 }
 
 .header {
-  // position: absolute;
-  // width: 100%;
   height: $headerHeight;
   align-items: center;
   display: flex;
   justify-content: flex-end;
   padding: 0 10px;
+}
+
+.sponsors {
+  padding: 5vmin;
+  background: $gray;
+  span {
+    display: block;
+    color: rgba(255, 255, 255, 0.25);
+    margin-bottom: 1.6em;
+    font-weight: 200;
+  }
+  margin-top: -1px; // I'm sorry. That's workaround for visual glitch on phone screens.
+}
+
+.sponsors__logos-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+
+  @media (min-device-width: 800px) {
+    height: 260px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+.sponsors__logo {
+  opacity: 0.25;
+  transition: opacity 250ms ease;
+  height: 120px;
+
+  @media (min-device-width: 800px) {
+    height: 60px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.sponsors__logo--young-skilled {
+    height: 200px;
+    margin: 60px 0;
+
+    @media (min-device-width: 800px) {
+      height: 100px;
+      margin: 0;
+    }
+  }
 }
