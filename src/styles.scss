@@ -62,7 +62,7 @@ h1 {
   }
 
   p {
-    margin-bottom: 1.6em;
+    margin: 1.6em 0;
   }
 
   .text--underline {
@@ -142,7 +142,8 @@ h1 {
   transition: background 250ms ease-in-out, transform 150ms ease,
     box-shadow 250ms ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 3px 4px 24px rgba(0, 0, 0, 0.35);
   }
 }
@@ -154,8 +155,12 @@ h1 {
 
 .button--gray {
   background: $gray;
-  border: 2px solid white;
   color: white;
+  border: 2px solid currentColor;
+
+  &:hover {
+    color: $yellow;
+  }
 }
 
 .button--transparent {
@@ -209,24 +214,31 @@ h1 {
   justify-items: center;
   align-items: center;
 
-  @media (min-device-width: 800px) {
+  @media (min-device-width: 800px) and (min-width: 800px) {
     height: 260px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
   }
 }
 
-.sponsors__logo {
+.semi-transparent {
   opacity: 0.25;
   transition: opacity 250ms ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+}
+
+.sponsors__logo {
+  @extend .semi-transparent;
   height: 120px;
+  margin: 40px 0;
 
   @media (min-device-width: 800px) {
     height: 60px;
-  }
-
-  &:hover {
-    opacity: 1;
   }
 
   &.sponsors__logo--young-skilled {
@@ -234,8 +246,55 @@ h1 {
     margin: 60px 0;
 
     @media (min-device-width: 800px) {
-      height: 100px;
+      height: 90px;
       margin: 0;
     }
+  }
+}
+
+.footer {
+  padding: 0 5vmin 5em 5vmin;
+  background: $gray;
+  color: white;
+}
+
+.footer__main {
+  padding-top: 5em;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer__nav {
+  margin-top: 2em;
+  a {
+    @extend .semi-transparent;
+    font-weight: 200;
+    margin-right: 3em;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.footer__logo {
+  float: left;
+}
+
+.social-icons {
+  float: right;
+  --size: 1.5em;
+  display: flex;
+  align-items: center;
+
+  a {
+    display: inline-block;
+    width: var(--size);
+    margin-left: 2em;
+    > img {
+      max-height: var(--size);
+    }
+  }
+
+  .icon-twitter {
+    width: calc(var(--size) + 2px);
+    padding-top: 2px;
   }
 }
