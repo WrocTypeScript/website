@@ -22,3 +22,5 @@ build
 package-lock.json
 
 .todo
+
+.gitignore
