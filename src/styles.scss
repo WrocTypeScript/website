@@ -221,19 +221,23 @@ h1 {
   }
 }
 
-.sponsors__logo {
+.semi-transparent {
   opacity: 0.25;
   transition: opacity 250ms ease;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.sponsors__logo {
+  @extend .semi-transparent;
   height: 120px;
   margin: 40px 0;
 
   @media (min-device-width: 800px) {
     height: 60px;
-  }
-
-  &:hover,
-  &:focus {
-    opacity: 1;
   }
 
   &.sponsors__logo--young-skilled {
@@ -244,5 +248,52 @@ h1 {
       height: 90px;
       margin: 0;
     }
+  }
+}
+
+.footer {
+  padding: 0 5vmin 5em 5vmin;
+  background: $gray;
+  color: white;
+}
+
+.footer__main {
+  padding-top: 5em;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer__nav {
+  margin-top: 2em;
+  a {
+    @extend .semi-transparent;
+    font-weight: 200;
+    margin-right: 3em;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.footer__logo {
+  float: left;
+}
+
+.social-icons {
+  float: right;
+  --size: 1.5em;
+  display: flex;
+  align-items: center;
+
+  a {
+    display: inline-block;
+    width: var(--size);
+    margin-left: 2em;
+    > img {
+      max-height: var(--size);
+    }
+  }
+
+  .icon-twitter {
+    width: calc(var(--size) + 2px);
+    padding-top: 2px;
   }
 }
