@@ -226,7 +226,8 @@ h1 {
   transition: opacity 250ms ease;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     opacity: 1;
   }
 }
