@@ -111,12 +111,7 @@ h1 {
 
   border: none;
 
-  border-radius: 10px;
-
-  @media (orientation: landscape), (min-device-width: 800px) {
-    border-radius: 5px;
-  }
-
+  border-radius: 5px;
   padding: 0.4em 1.4em;
 }
 
@@ -214,7 +209,7 @@ h1 {
   justify-items: center;
   align-items: center;
 
-  @media (min-device-width: 800px) and (min-width: 800px) {
+  @media (min-width: 800px) {
     height: 260px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -234,21 +229,19 @@ h1 {
 
 .sponsors__logo {
   @extend .semi-transparent;
-  height: 120px;
   margin: 40px 0;
+  height: 50px;
 
-  @media (min-device-width: 800px) {
+  @media (min-width: 400px) {
     height: 60px;
   }
 
   &.sponsors__logo--young-skilled {
-    height: 200px;
-    margin: 60px 0;
-
-    @media (min-device-width: 800px) {
+    height: 80px;
+    @media (min-width: 400px) {
       height: 90px;
-      margin: 0;
     }
+    margin: 0;
   }
 }
 
@@ -259,6 +252,7 @@ h1 {
 }
 
 .footer__main {
+  display: flex;
   padding-top: 5em;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -275,11 +269,10 @@ h1 {
 }
 
 .footer__logo {
-  float: left;
+  flex: 1;
 }
 
 .social-icons {
-  float: right;
   --size: 1.5em;
   display: flex;
   align-items: center;
