@@ -16,7 +16,7 @@ body {
 body {
   margin: 0;
 
-  font-family: 'Mukta Vaani', sans-serif;
+  font-family: freight-sans-pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 2vmax;
 
@@ -26,9 +26,8 @@ body {
 }
 
 h1 {
-  font-weight: inherit;
   font-size: 10vmin;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.4;
 
   @media (min-width: 1000px) {
@@ -197,7 +196,7 @@ h1 {
     display: block;
     color: rgba(255, 255, 255, 0.25);
     margin-bottom: 1.6em;
-    font-weight: 200;
+    font-weight: 300;
   }
   margin-top: -1px; // I'm sorry. That's workaround for visual glitch on phone screens.
 }
@@ -261,7 +260,7 @@ h1 {
   margin-top: 2em;
   a {
     @extend .semi-transparent;
-    font-weight: 200;
+    font-weight: 300;
     margin-right: 3em;
     color: white;
     text-decoration: none;
