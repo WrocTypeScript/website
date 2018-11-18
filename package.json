@@ -7,8 +7,8 @@
   "private": true,
   "scripts": {
     "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html -d build --public-url .",
-    "predeploy": "yarn build",
+    "build": "parcel build ./src/index.html --out-dir build --public-url .",
+    "predeploy": "yarn build && cp CNAME build",
     "deploy": "gh-pages --dist build"
   },
   "devDependencies": {
