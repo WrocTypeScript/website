@@ -9,7 +9,7 @@
     "dev": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html -d build --public-url .",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages --dist build"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
