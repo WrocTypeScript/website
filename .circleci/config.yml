@@ -6,6 +6,7 @@ jobs:
     working_directory: ~/website
     steps:
       - checkout
+      - run: git config --global user.email "krzystof.zuraw@fastmail.com" && git config --global user.name "Krzysztof Żuraw"
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
@@ -22,6 +23,3 @@ workflows:
   build:
     jobs:
       - deploy:
-          filters:
-            branches:
-              only: master
