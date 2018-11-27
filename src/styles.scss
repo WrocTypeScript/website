@@ -16,7 +16,8 @@ body {
 body {
   margin: 0;
 
-  font-family: freight-sans-pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  font-family: freight-sans-pro, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 2vmax;
 
@@ -228,19 +229,24 @@ h1 {
 
 .sponsors__logo {
   @extend .semi-transparent;
-  margin: 40px 0;
-  height: 50px;
 
-  @media (min-width: 400px) {
-    height: 60px;
+  > img {
+    margin: 40px 0;
+    height: 50px;
+
+    @media (min-width: 400px) {
+      height: 60px;
+    }
   }
 
   &.sponsors__logo--young-skilled {
-    height: 80px;
-    @media (min-width: 400px) {
-      height: 90px;
+    > img {
+      height: 80px;
+      @media (min-width: 400px) {
+        height: 90px;
+      }
+      margin: 0;
     }
-    margin: 0;
   }
 }
 
