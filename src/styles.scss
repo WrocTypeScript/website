@@ -227,6 +227,15 @@ h1 {
   }
 }
 
+.focus-border-bottom {
+  border-bottom: 2px solid transparent;
+
+  &:focus {
+    outline: none;
+    border-bottom-color: $yellow;
+  }
+}
+
 .sponsors__logo {
   @extend .semi-transparent;
 
@@ -266,6 +275,8 @@ h1 {
   margin-top: 2em;
   a {
     @extend .semi-transparent;
+    @extend .focus-border-bottom;
+
     font-weight: 300;
     margin-right: 3em;
     color: white;
@@ -283,6 +294,7 @@ h1 {
   align-items: center;
 
   a {
+    @extend .focus-border-bottom;
     display: inline-block;
     width: var(--size);
     margin-left: 2em;
