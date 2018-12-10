@@ -1,5 +1,5 @@
 $blue: #0062ff;
-$yellow: orange;
+$yellow: #ffb700;
 $gray: #141414;
 
 $headerHeight: 65px;
@@ -256,6 +256,25 @@ h1 {
       }
       margin: 0;
     }
+  }
+}
+
+.about-page {
+  background: $yellow;
+  min-height: 100%;
+
+  position: relative;
+  .about-page__background {
+    top: 0;
+    left: 10%;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+
+    font-size: 38px;
+    text-anchor: end;
+    fill: white;
+    font-weight: 900;
   }
 }
 
