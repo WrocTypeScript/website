@@ -23,7 +23,9 @@ body {
   font-size: 18px;
 
   @media (min-width: 800px) {
-    font-size: 29px;
+    p {
+      font-size: 29px;
+    }
   }
 }
 
@@ -149,6 +151,11 @@ h1 {
   color: white;
 }
 
+.button--ghost {
+  border: 2px solid currentColor;
+  font-weight: 400;
+}
+
 .button--gray {
   background: $gray;
   color: white;
@@ -267,16 +274,11 @@ h1 {
 
   position: relative;
   .about-page__background {
-    top: 0;
-    left: 10%;
-    width: 90%;
-    height: 100%;
+    bottom: 5%;
+    right: 10px;
+    width: 70%;
+    height: 70%;
     position: absolute;
-
-    font-size: 38px;
-    text-anchor: end;
-    fill: white;
-    font-weight: 900;
   }
 
   .text--underline {
