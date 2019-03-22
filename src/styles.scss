@@ -148,6 +148,8 @@ h1 {
 
 .button--blue {
   background: $blue;
+  border: 2px solid $blue;
+  font-weight: 500;
   color: white;
 }
 
@@ -158,6 +160,7 @@ h1 {
 
 .button--gray {
   background: $gray;
+  font-weight: 500;
   color: white;
   border: 2px solid currentColor;
 
