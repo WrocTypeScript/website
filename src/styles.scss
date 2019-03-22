@@ -272,11 +272,24 @@ h1 {
 
 .about-page {
   background: $yellow;
+
   min-height: 100%;
   padding: 3em;
 
   position: relative;
-  .about-page__background {
+
+  .about-page__particles-bg {
+    background-image: url("./about-page-bg.svg");
+    background-size: cover;
+
+    position: absolute;
+    left: 4%;
+    top: 2%;
+    width: 92%;
+    height: 96%;
+  }
+
+  .about-page__ts-letters-bg {
     bottom: 5%;
     right: 10px;
     width: 70%;
@@ -338,7 +351,7 @@ h1 {
     @extend .focus-border-bottom;
     margin-left: 2em;
     width: var(--size);
-    
+
     > img {
       max-height: var(--size);
     }

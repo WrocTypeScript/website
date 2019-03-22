@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1307.56 830.84">
+<svg
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1307.56 830.84">
   <defs>
     <style>
       .abg-cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.73px}
@@ -13,9 +14,9 @@
       <path stroke-dasharray="12.86 12.86" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2.73" d="M345.96 342.95h96.47"/>
       <path class="abg-cls-2" d="M448.87 342.95h6.29"/>
       <path class="abg-cls-4" d="M426.09 627.2a41 41 0 0 0 41 41v-82.02a41 41 0 0 0-41 41.02z"/>
-      <path class="abg-cls-5" d="M910.09 12.89v157.53h-26.4v17.81h43.11V22.07l-16.71-9.18z"/>
+      <!-- <path class="abg-cls-5" d="M910.09 12.89v157.53h-26.4v17.81h43.11V22.07l-16.71-9.18z"/> -->
       <path fill="#0062ff" d="M1235.29 381.25v-.05"/>
-      <path class="abg-cls-7" d="M10.86 136.18L10.69 0H0v136.39"/>
+      <!-- <path class="abg-cls-7" d="M10.86 136.18L10.69 0H0v136.39"/> -->
       <path class="abg-cls-4" d="M859.85 318.61l-46.33-26.27v26.27h46.33z"/>
       <path opacity=".9" fill="#ffdc68" d="M92.78 357.32l17.17 41.28 60.92-25.24-78.09-16.04z"/>
       <path class="abg-cls-4" d="M1027.88 830.84V711.25h-32.24l.14 119.59"/>
