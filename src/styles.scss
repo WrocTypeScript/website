@@ -115,7 +115,7 @@ h1 {
   border: none;
 
   border-radius: 5px;
-  padding: 0.4em 1.4em;
+  padding: 0.45em 1.4em;
 }
 
 @mixin textUnderline($underlineColor) {
@@ -153,7 +153,7 @@ h1 {
 
 .button--ghost {
   border: 2px solid currentColor;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .button--gray {
