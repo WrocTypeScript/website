@@ -2,7 +2,6 @@
   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1307.56 830.84">
   <defs>
     <style>
-      .abg-cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.73px}
       .abg-cls-4{fill:#0062ff;opacity:.65}
       .abg-cls-5{fill:#ffdc68}
       .abg-cls-7{fill:#e0ecff;opacity:.9}
@@ -10,9 +9,6 @@
   </defs>
   <g id="Layer_2" data-name="Layer 2">
     <g id="Layer_1-2" data-name="Layer 1">
-      <path class="abg-cls-2" d="M326.79 342.95h6.3"/>
-      <path stroke-dasharray="12.86 12.86" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2.73" d="M345.96 342.95h96.47"/>
-      <path class="abg-cls-2" d="M448.87 342.95h6.29"/>
       <path class="abg-cls-4" d="M426.09 627.2a41 41 0 0 0 41 41v-82.02a41 41 0 0 0-41 41.02z"/>
       <!-- <path class="abg-cls-5" d="M910.09 12.89v157.53h-26.4v17.81h43.11V22.07l-16.71-9.18z"/> -->
       <path fill="#0062ff" d="M1235.29 381.25v-.05"/>
