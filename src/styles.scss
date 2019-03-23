@@ -260,14 +260,15 @@ h1 {
 }
 
 .knowledge-bombs {
+  min-height: 80vh;
   padding: 5vmin;
   display: flex;
   flex-direction: column;
-  background-image: url('./gfx/knowledge-bombs.svg');
+  background-image: url("./gfx/knowledge-bombs.svg");
   background-position: center;
   background-repeat: no-repeat;
 
-  @media (min-device-width: 1200px) {
+  @media (min-width: 1200px) {
     flex-direction: row;
   }
 
