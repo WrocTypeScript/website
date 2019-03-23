@@ -316,6 +316,41 @@ h1 {
   }
 }
 
+.knowledge-bombs {
+  padding: 5vmin;
+  display: flex;
+  flex-direction: column;
+  background-image: url('./gfx/knowledge-bombs.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-device-width: 1200px) {
+    flex-direction: row;
+  }
+
+  .half {
+    display: flex;
+    align-items: center;
+    margin: 7vmin 5vmin;
+    flex: 1;
+
+    &.call-to-action {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      & .headline {
+        white-space: nowrap;
+        margin: 0.25em 0;
+      }
+    }
+
+    &.twitter-feed {
+      justify-content: center;
+    }
+  }
+}
+
 .footer {
   padding: 0 5vmin 5em 5vmin;
   background: $gray;
