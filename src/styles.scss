@@ -291,6 +291,10 @@ h1 {
 
     &.twitter-feed {
       justify-content: center;
+
+      iframe {
+        box-shadow: 16px 15px 50px rgba(0, 0, 0, 0.15);
+      }
     }
   }
 }
