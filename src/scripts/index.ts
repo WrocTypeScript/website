@@ -5,13 +5,7 @@
 import { MeetupApi } from "./meetupApi";
 
 if ("Promise" in window) {
-  void (function main() {
-    const elementIsAnchor = (
-      element: HTMLElement | null
-    ): element is HTMLAnchorElement => {
-      return element ? element.tagName === "A" : false;
-    };
-
+  (function main() {
     // https://github.com/meetup/api/issues/130#issuecomment-253679176
     const JSONP_ID = "js-jsonp";
     const CALLBACK_NAME = "__callback";
@@ -41,7 +35,7 @@ if ("Promise" in window) {
      */
     const addLinkToLatestMeetup = () => {
       const anchor = document.getElementById("js-attend-a-meetup");
-      if (elementIsAnchor(anchor)) {
+      if (anchor instanceof HTMLAnchorElement) {
         jsonpGet(
           "https://api.meetup.com/WrocTypeScript/events?&sign=true&photo-host=public&page=1"
         ).then(res => {
