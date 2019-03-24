@@ -1,7 +1,7 @@
 #### Wrocław TypeScript community website
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 
-# http://typescript.community/
+# https://typescript.community/
 
 ## Contributors
 
