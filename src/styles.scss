@@ -15,6 +15,7 @@ body {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 
   font-family: freight-sans-pro, -apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica, Arial, sans-serif;
@@ -282,7 +283,7 @@ h1 {
   .about-page__particles-bg {
     background-image: url("./about-page-bg.svg");
     background-size: cover;
-    
+
     position: absolute;
     left: 0;
     top: 0;
@@ -364,8 +365,14 @@ h1 {
 
 .footer__main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 5em;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  @media (min-width: 512px) {
+    flex-direction: row;
+  }
 }
 
 .footer__nav {
@@ -379,15 +386,38 @@ h1 {
     color: white;
     text-decoration: none;
   }
+
+  @media (max-width: 512px) {
+    display: flex;
+
+    a {
+      margin-top: 2em;
+      margin-right: 0;
+    }
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .footer__logo {
   flex: 1;
+  margin-bottom: 9px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 512px) {
+    margin-bottom: 3em;
+  }
 }
 
 .social-icons {
+  height: 50px;
+
   --size: 1.5em;
   display: flex;
+  justify-content: center;
   align-items: center;
 
   a {
@@ -398,12 +428,10 @@ h1 {
     > img {
       max-height: var(--size);
     }
-  }
 
-  .icon-facebook {
-    height: 100%;
-    display: flex;
-    justify-content: center;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 
   .icon-twitter {
