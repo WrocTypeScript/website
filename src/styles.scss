@@ -370,7 +370,7 @@ h1 {
   padding-top: 5em;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 
-  @media (min-width: 512px) {
+  @media (min-width: 600px) {
     flex-direction: row;
   }
 }
@@ -387,7 +387,7 @@ h1 {
     text-decoration: none;
   }
 
-  @media (max-width: 512px) {
+  @media (max-width: 600px) {
     display: flex;
 
     a {
@@ -407,7 +407,7 @@ h1 {
   display: flex;
   align-items: center;
 
-  @media (max-width: 512px) {
+  @media (max-width: 600px) {
     margin-bottom: 3em;
   }
 }
