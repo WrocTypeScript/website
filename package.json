@@ -14,7 +14,7 @@
   "devDependencies": {
     "gh-pages": "^2.0.1",
     "parcel": "^1.12.3",
-    "sass": "^1.14.3",
+    "sass": "^1.20.3",
     "typescript": "^3.5.1"
   }
 }
