@@ -15,6 +15,6 @@
     "gh-pages": "^2.0.1",
     "parcel": "^1.12.3",
     "sass": "^1.14.3",
-    "typescript": "^3.3.4000"
+    "typescript": "^3.5.1"
   }
 }
