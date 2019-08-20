@@ -10,10 +10,10 @@ if ("Promise" in window) {
     const JSONP_ID = "js-jsonp";
     const CALLBACK_NAME = "__callback";
     const jsonpGet = (url: string) => {
-      return new Promise((resolve, reject) => {
+      return new Promise(resolve => {
         let jsonpScriptTag = document.getElementById(
           JSONP_ID
-        ) as HTMLScriptElement;
+        ) as HTMLScriptElement | null;
 
         if (!jsonpScriptTag) {
           jsonpScriptTag = document.createElement("script");
