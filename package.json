@@ -15,7 +15,7 @@
     "gh-pages": "^2.1.1",
     "parcel": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.2.1",
-    "sass": "^1.23.2",
+    "sass": "^1.23.3",
     "typescript": "^3.6.4"
   },
   "dependencies": {},
