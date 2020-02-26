@@ -357,6 +357,12 @@ h1 {
   }
 }
 
+.conference-page {
+  @extend .speaker-page;
+
+  background-color: $gray;
+}
+
 .footer {
   padding: 0 5vmin 5em 5vmin;
   background: $gray;
