@@ -357,6 +357,42 @@ h1 {
   }
 }
 
+.conference-page {
+  @extend .speaker-page;
+
+  background-color: $yellow;
+  color: unset;
+
+  .text--underline {
+    border-color: unset;
+  }
+
+  a.text--underline {
+    color: unset;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      border-bottom-style: solid;
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .conference-page__buttons {
+    display: flex;
+    & > a {
+      margin: 0.5em;
+    }
+
+    .button--gray {
+      border-color: $gray;
+      color: $yellow;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
 .footer {
   padding: 0 5vmin 5em 5vmin;
   background: $gray;
