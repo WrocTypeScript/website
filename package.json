@@ -12,6 +12,8 @@
     "deploy": "gh-pages --dist build"
   },
   "devDependencies": {
+    "@codechecks/client": "^0.1.10",
+    "@codechecks/lighthouse-keeper": "^0.1.2",
     "gh-pages": "^2.1.1",
     "parcel": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.2.1",
